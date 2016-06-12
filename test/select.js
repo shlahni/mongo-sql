@@ -934,5 +934,29 @@ describe('Built-In Query Types', function(){
         });
       });
     });
+    
+    //sa-queries tests
+     it ('should select top', function(){
+      var query = builder.sql({
+        type: 'select'
+      , table: 'users'
+      , top: 5
+      });
+
+      assert.equal(
+        query.toString()
+      , 'select top 5 "users".* from "users"'
+      );
+    });
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   });
 });

@@ -50,6 +50,9 @@ require('./helpers/query/where');
 require('./helpers/query/window');
 require('./helpers/query/with');
 
+//rigister sa query Types
+require('./helpers/query/sa-top');
+
 // Register conditional helpers
 require('./helpers/conditional');
 

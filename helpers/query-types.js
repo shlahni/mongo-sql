@@ -2,7 +2,7 @@
 var queryTypes = require('../lib/query-types');
 
 queryTypes.add( 'select', [
-  '{with} select {expression} {distinct}'
+  '{with} select {expression} {distinct} {top}'
 , '{columns} {over} {table} {alias}'
 , '{joins} {join} {innerJoin} {leftJoin} {leftOuterJoin} {fullOuterJoin} {crossOuterJoin}'
 , '{where} {groupBy} {having} {window} {order} {limit} {offset} {for}'
