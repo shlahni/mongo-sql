@@ -9,19 +9,15 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha -R spec"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/goodybag/mongo-sql.git"
-  },
   "keywords": [
-    "postgres",
-    "postgresql",
-    "node-pg",
     "mongo",
     "sql"
   ],
-  "author": "John Fawcett",
-  "license": "BSD",
+  "author": "shlahni",
+ "dependencies": {
+    "moment":"^2.14.1",
+    "moment-jalaali": "^0.4.0"
+  },
   "devDependencies": {
     "browserify": "^5.9.1",
     "gulp": "^3.8.7",

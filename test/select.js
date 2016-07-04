@@ -949,7 +949,23 @@ describe('Built-In Query Types', function(){
       );
     });
     
-    
+      it ('should select months-ago', function(){
+      var query = builder.sql({
+        type: 'select'
+      , table: 'users'
+      , where: {
+        date :
+        {
+         $months_ago: 2
+        }
+      }
+      });
+
+      assert.equal(
+        query.toString()
+      , 'select "users".* from "users" where date >= now() - 2 months'
+      );
+    });
     
     
     

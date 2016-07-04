@@ -50,11 +50,14 @@ require('./helpers/query/where');
 require('./helpers/query/window');
 require('./helpers/query/with');
 
-//rigister sa query Types
+//sarv:rigister sa query Types
 require('./helpers/query/sa-top');
 
 // Register conditional helpers
 require('./helpers/conditional');
+
+//sarv: Register sa-conditional helpers
+require('./helpers/sa-conditional');
 
 // Register update helpers
 require('./helpers/update');
